@@ -43,7 +43,6 @@ function setDate() {
     const year = date.getFullYear()
     const utcDay = date.getUTCDate()
     electricWatchData.innerHTML = `${dayObj[day]}, ${utcDay},${monthObj[month]},${year}`
-    console.log(date.getUTCDate())
 }
 
 setDate()

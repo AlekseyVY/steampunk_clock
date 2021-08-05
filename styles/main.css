@@ -179,3 +179,27 @@ main {
     letter-spacing: 1px;
     font-family: 'Indie Flower', cursive;
 }
+
+.audio_switch {
+    position: absolute;
+    top: 55px;
+    right: 65px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #645a7c;
+}
+
+.audio_switch:hover {
+    cursor: pointer;
+    color: #e3a863;
+}
+
+.audio_switch__txt {
+    font-size: 64px;
+    letter-spacing: 1px;
+    font-family: 'Indie Flower', cursive;
+
+}
