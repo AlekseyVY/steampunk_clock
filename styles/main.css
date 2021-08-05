@@ -7,6 +7,7 @@ main {
 }
 
 .main_container {
+    position: relative;
     max-width: 1440px;
     width: 100%;
     display: flex;
@@ -14,9 +15,51 @@ main {
     justify-content: center;
 }
 
+.shape_1 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: darkslateblue;
+    -webkit-box-shadow: -5px 0px 29px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px 0px 29px 5px rgba(0,0,0,0.5);
+}
+
+.shape_2 {
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: orangered;
+    -webkit-box-shadow: 5px 0px 29px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 0px 29px 5px rgba(0,0,0,0.5);
+}
+
+.shape_3 {
+    position: absolute;
+    bottom: 50px;
+    border-radius: 10px;
+    left: 200px;
+    width: 500px;
+    height: 200px;
+    background-color: yellowgreen;
+    -webkit-box-shadow: -5px 0px 29px 5px rgba(0,0,0,0.5);
+    box-shadow: -5px 0px 29px 5px rgba(0,0,0,0.5);
+}
+
 
 .clock_container {
     position: relative;
+    background: rgba( 219, 255, 255, 0.20 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.0px );
+    -webkit-backdrop-filter: blur( 7.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .clockface {
