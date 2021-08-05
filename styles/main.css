@@ -27,44 +27,53 @@ main {
 
 
 .hour_cog {
+    --rotation: 0;
     width: 450px;
     position: absolute;
     top: 275px;
     left: 275px;
+    transform-origin: center;
+    transform: rotate(calc(var(--rotation) * 1deg));
 }
 
 .minute_cog {
+    --rotation: 0;
     width: 300px;
     position: absolute;
     top: 350px;
     left: 350px;
+    transform-origin: center;
+    transform: rotate(calc(var(--rotation) * -1deg));
 }
 
 .second_cog {
+    --rotation: 0;
     width: 150px;
     position: absolute;
     top: 425px;
     left: 425px;
+    transform-origin: center;
+    transform: rotate(calc(var(--rotation) * 1deg));
 }
 
 .minute_arrow {
-    --rotate_minute: 280;
+    --rotation: 120;
     width: 60px;
     position: absolute;
     bottom: 50%;
     left: 47.5%;
     transform-origin: bottom;
-    transform: rotate(calc(var(--rotate_minute) * 1deg));
+    transform: rotate(calc(var(--rotation) * 1deg));
 }
 
 .hour_arrow {
-    --rotate_hour: 60;
+    --rotation: 60;
     width: 90px;
     position: absolute;
     bottom: 50%;
     left: 45.5%;
     transform-origin: bottom;
-    transform: rotate(calc(var(--rotate_hour) * 1deg));
+    transform: rotate(calc(var(--rotation) * 1deg));
 }
 
 .holo {
