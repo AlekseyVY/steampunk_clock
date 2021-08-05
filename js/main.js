@@ -14,8 +14,8 @@ function clock() {
     const hoursDeg = (minutesDeg + date.getHours()) / 12;
     animate(hours, hoursDeg);
     animate(minutes, minutesDeg)
-    animate(hourCog, hoursDeg)
-    animate(minuteCog, minutesDeg)
+    animate(hourCog, minutesDeg)
+    animate(minuteCog, secondsDeg)
     animate(secondsCog, secondsDeg)
 }
 

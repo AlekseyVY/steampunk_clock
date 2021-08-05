@@ -1,6 +1,6 @@
 main {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,38 +20,37 @@ main {
 }
 
 .clockface {
-    width: 1000px;
+    width: 900px;
     height: 100%;
-    z-index: 10;
 }
 
 
 .hour_cog {
     --rotation: 0;
-    width: 450px;
+    width: 405px;
     position: absolute;
-    top: 275px;
-    left: 275px;
+    top: 240px;
+    left: 240px;
     transform-origin: center;
-    transform: rotate(calc(var(--rotation) * 1deg));
+    transform: rotate(calc(var(--rotation) * -1deg));
 }
 
 .minute_cog {
     --rotation: 0;
-    width: 300px;
+    width: 270px;
     position: absolute;
-    top: 350px;
-    left: 350px;
+    top: 306px;
+    left: 308px;
     transform-origin: center;
     transform: rotate(calc(var(--rotation) * -1deg));
 }
 
 .second_cog {
     --rotation: 0;
-    width: 150px;
+    width: 135px;
     position: absolute;
-    top: 425px;
-    left: 425px;
+    top: 374px;
+    left: 375px;
     transform-origin: center;
     transform: rotate(calc(var(--rotation) * 1deg));
 }
@@ -60,8 +59,8 @@ main {
     --rotation: 120;
     width: 60px;
     position: absolute;
-    bottom: 50%;
-    left: 47.5%;
+    bottom: 51%;
+    left: 45.5%;
     transform-origin: bottom;
     transform: rotate(calc(var(--rotation) * 1deg));
 }
@@ -70,16 +69,26 @@ main {
     --rotation: 60;
     width: 90px;
     position: absolute;
-    bottom: 50%;
-    left: 45.5%;
+    bottom: 51%;
+    left: 44.5%;
     transform-origin: bottom;
     transform: rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock_plug {
+    position: absolute;
+    top: 46.5%;
+    left: 47%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
 }
 
 .holo {
     width: 258px;
     height: 400px;
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     right: 0;
 }
