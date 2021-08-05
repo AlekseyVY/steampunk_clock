@@ -135,3 +135,34 @@ main {
     bottom: 50px;
     right: 0;
 }
+
+.holo:hover {
+    cursor: pointer;
+}
+
+.holo_dialog {
+    position: absolute;
+    bottom: 350px;
+    right: 10px;
+    width: 500px;
+    transition-duration: 0.8s;
+}
+
+.holo_dialog__img {
+    width: 500px;
+}
+
+.none {
+    opacity: 0%;
+}
+
+.electric_wrapper {
+    position: absolute;
+    bottom: 133px;
+    right: 88px;
+    width: 350px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
