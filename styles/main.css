@@ -14,7 +14,63 @@ main {
     justify-content: center;
 }
 
+
+.clock_container {
+    position: relative;
+}
+
 .clockface {
     width: 1000px;
     height: 100%;
+    z-index: 10;
+}
+
+
+.hour_cog {
+    width: 450px;
+    position: absolute;
+    top: 275px;
+    left: 275px;
+}
+
+.minute_cog {
+    width: 300px;
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}
+
+.second_cog {
+    width: 150px;
+    position: absolute;
+    top: 425px;
+    left: 425px;
+}
+
+.minute_arrow {
+    --rotate_minute: 280;
+    width: 60px;
+    position: absolute;
+    bottom: 50%;
+    left: 47.5%;
+    transform-origin: bottom;
+    transform: rotate(calc(var(--rotate_minute) * 1deg));
+}
+
+.hour_arrow {
+    --rotate_hour: 60;
+    width: 90px;
+    position: absolute;
+    bottom: 50%;
+    left: 45.5%;
+    transform-origin: bottom;
+    transform: rotate(calc(var(--rotate_hour) * 1deg));
+}
+
+.holo {
+    width: 258px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
