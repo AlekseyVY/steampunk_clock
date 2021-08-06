@@ -224,3 +224,47 @@ main {
 .weather_icon {
     width: 130px;
 }
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    letter-spacing: 1px;
+    font-family: 'Indie Flower', cursive;
+    color: #e3a863;
+}
+.dot_0 {
+    animation-duration: 10s;
+    animation-name: loadAnim;
+}
+.dot_1 {
+    animation-duration: 10s;
+    animation-name: loadAnim;
+}
+.dot_2 {
+    animation-duration: 10s;
+    animation-name: loadAnim;
+}
+.dot_3 {
+    animation-duration: 10s;
+    animation-name: loadAnim;
+}
+
+@keyframes loadAnim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
