@@ -19,8 +19,12 @@
                 <div data-offset="1.5" class="shape three"></div>
                 <div class="clock_container">
                     <div class="audio_switch" onclick="play()">
-                        <audio id="audio" src="./assets/01.mp3"></audio>
+                        <audio id="audio" src="./assets/02.mp3"></audio>
                         <span class="audio_switch__txt">play</span>
+                    </div>
+                    <div class="weather_container">
+                        <h1 class="weather_tmp">0</h1>
+                        <img class="weather_icon" src="" alt="weather">
                     </div>
                     <img class="clockface" src="./assets/clockface.png" alt="clock face">
                     <img data-hourCog class="hour_cog" src="./assets/hour.png" alt="hour cog">
@@ -45,5 +49,6 @@
         <script defer src="./js/dialog_switch.js"></script>
         <script defer src="./js/electronic.js"></script>
         <script defer src="./js/audio.js"></script>
+        <script defer src="./js/weather.js"></script>
     </body>
 </html>

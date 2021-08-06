@@ -2,10 +2,11 @@ let status = false
 
 const play = function() {
     this.audio = document.getElementById('audio');
-    this.btnText = document.querySelector('.audio_switch__txt')
+    this.btnText = document.querySelector('.audio_switch__txt');
     return (() => {
         if(!status) {
             this.audio.volume = 0.5;
+            this.audio.loop = true;
             this.audio.play()
             status = true
             this.btnText.innerHTML = 'stop'
