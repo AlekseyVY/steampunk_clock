@@ -29,7 +29,6 @@ function error(err) {
         weatherIcon.src = `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`
         const temp = Math.floor(weather.main.temp)
         weatherTmp.innerHTML = temp > 0 ? `+${temp}` : `-${temp}`
-        console.log(weather)
     })()
 }
 
