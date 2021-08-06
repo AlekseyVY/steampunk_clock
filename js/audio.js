@@ -1,6 +1,6 @@
 let status = false
 
-const playList = ['01', '02', '03', '04', '05'];
+const playList = ['01', '02'];
 
 const play = function() {
     this.audio = document.getElementById('audio');
@@ -9,7 +9,7 @@ const play = function() {
         if(!status) {
             const shuffle = Math.floor(Math.random() * playList.length);
             this.audio.src = `./assets/${playList[shuffle]}.mp3`;
-            this.audio.volume = 0.5;
+            this.audio.volume = 0.3;
             this.audio.loop = true;
             this.audio.play()
             status = true
