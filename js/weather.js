@@ -12,7 +12,7 @@ function success(pos) {
         const weather = await data.json()
         const weatherIcon = document.querySelector('.weather_icon');
         const weatherTmp = document.querySelector('.weather_tmp');
-        weatherIcon.src = `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`
+        weatherIcon.src = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`
         const temp = Math.floor(weather.main.temp)
         weatherTmp.innerHTML = temp > 0 ? `+${temp}` : `-${temp}`
     })()
