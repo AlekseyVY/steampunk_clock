@@ -24,3 +24,4 @@ function animate(ele, deg) {
 }
 
 clock();
+console.log("Clock 30/30 points:\n1. Electric clock is accessible when you click on Holo, same for closing. + 10\n2. Weather functionality, top-left side. + 10\n3. Plays music when clicked on play button top-right. + 10");

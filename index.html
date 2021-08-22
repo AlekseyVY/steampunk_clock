@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Steam punk clock with Holo, by AlekseyVY</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-        <link rel="icon" href="./assets/red-apple.png">
-        <link rel="stylesheet" href="./styles/normalize.css">
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
-    <body>
-        <main>
-            <section class="main_container">
-                <div class="loader">
-                    <img src="./assets/loader.gif" alt="loader">
-                    <h1 class="dot_0">loading<span class="dot_1">.</span><span class="dot_2">.</span><span class="dot_3">.</span></h1>
-                </div>
-                <div data-offset="0.5" class="shape one"></div>
-                <div data-offset="-1" class="shape two"></div>
-                <div data-offset="1.5" class="shape three"></div>
-                <div class="clock_container">
-                    <div class="audio_switch" onclick="play()">
-                        <audio id="audio" src="./assets/02.mp3"></audio>
-                        <span class="audio_switch__txt">play</span>
-                    </div>
-                    <div class="weather_container">
-                        <h1 class="weather_tmp">0</h1>
-                        <img class="weather_icon" src="./assets/red-apple.png" alt="weather">
-                    </div>
-                    <img class="clockface" src="./assets/clockface.png" alt="clock face">
-                    <img data-hourCog class="hour_cog" src="./assets/hour.png" alt="hour cog">
-                    <img data-minuteCog class="minute_cog" src="./assets/minute.png" alt="minute cog">
-                    <img data-secondsCog class="second_cog" src="./assets/second.png" alt="second cog">
-                    <img data-minute class="minute_arrow" src="./assets/minute_arrow.png" alt="minute arrow">
-                    <img data-hour class="hour_arrow" src="./assets/hour_arrow.png" alt="hour arrow">
-                    <img data-offset="0.5" class="shape holo" src="./assets/holo.png" alt="Holo">
-                    <div class="clock_plug"></div>
-                    <div data-offset="1" class="shape holo_dialog none">
-                        <img class="holo_dialog__img" src="./assets/holo_dialog.png" alt="holo dialog">
-                        <div class="electric_wrapper">
-                            <h1 class="electric_watch">00:00.00</h1>
-                            <h2 class="electric_watch_data">Wednesday, 01,December,2021</h2>
-                        </div>
-                    </div >
-                </div>
-            </section>
-        </main>
-        <script defer src="./js/loader.js"></script>
-        <script defer src="./js/main.js"></script>
-        <script defer src="./js/parallax.js"></script>
-        <script defer src="./js/dialog_switch.js"></script>
-        <script defer src="./js/electronic.js"></script>
-        <script defer src="./js/audio.js"></script>
-        <script defer src="./js/weather.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steam punk clock with Holo, by AlekseyVY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/red-apple.png">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+<main>
+  <section class="main_container">
+    <div class="loader">
+      <img src="./assets/loader.gif" alt="loader">
+      <h1 class="dot_0">loading<span class="dot_1">.</span><span class="dot_2">.</span><span class="dot_3">.</span></h1>
+    </div>
+    <div data-offset="0.5" class="shape one"></div>
+    <div data-offset="-1" class="shape two"></div>
+    <div data-offset="1.5" class="shape three"></div>
+    <div class="clock_container">
+      <div class="audio_switch" onclick="play()">
+        <audio id="audio" src="./assets/02.mp3"></audio>
+        <span class="audio_switch__txt">play</span>
+      </div>
+      <div class="weather_container">
+        <h1 class="weather_tmp">0</h1>
+        <img class="weather_icon" src="./assets/red-apple.png" alt="weather">
+      </div>
+      <img class="clockface" src="./assets/clockface.png" alt="clock face">
+      <img data-hourCog class="hour_cog" src="./assets/hour.png" alt="hour cog">
+      <img data-minuteCog class="minute_cog" src="./assets/minute.png" alt="minute cog">
+      <img data-secondsCog class="second_cog" src="./assets/second.png" alt="second cog">
+      <img data-minute class="minute_arrow" src="./assets/minute_arrow.png" alt="minute arrow">
+      <img data-hour class="hour_arrow" src="./assets/hour_arrow.png" alt="hour arrow">
+      <img data-offset="0.5" class="shape holo" src="./assets/holo.png" alt="Holo">
+      <div class="clock_plug"></div>
+      <div data-offset="1" class="shape holo_dialog none">
+        <img class="holo_dialog__img" src="./assets/holo_dialog.png" alt="holo dialog">
+        <div class="electric_wrapper">
+          <h1 class="electric_watch">00:00.00</h1>
+          <h2 class="electric_watch_data">Wednesday, 01,December,2021</h2>
+        </div>
+      </div >
+    </div>
+  </section>
+</main>
+<script defer src="./js/loader.js"></script>
+<script defer src="./js/main.js"></script>
+<script defer src="./js/parallax.js"></script>
+<script defer src="./js/dialog_switch.js"></script>
+<script defer src="./js/electronic.js"></script>
+<script defer src="./js/audio.js"></script>
+<script defer src="./js/weather.js"></script>
+</body>
 </html>
